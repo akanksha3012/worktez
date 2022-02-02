@@ -18,6 +18,9 @@
     <ng-container *ngIf="popupHandlerService.updateTeamEnabled">
         <app-create-new-team (teamUpdated)="teamUpdated($event)" [teamId]="popupHandlerService.updateTeamId"></app-create-new-team>
     </ng-container>
+    <ng-container *ngIf="popupHandlerService.createPostEnabled">
+        <app-create-post></app-create-post>
+    </ng-container>
 
     
     <ng-container *ngIf="authService.completedLoadingApplication; else loader">

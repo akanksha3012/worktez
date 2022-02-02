@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PopupHandlerService {
-
+  createPostEnabled: boolean = false
   createNewSprintEnabled: boolean = false
   createNewTaskEnabled: boolean = false
   createNewTeamEnabled: boolean = false
